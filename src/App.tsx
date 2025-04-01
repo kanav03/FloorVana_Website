@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ChevronDown, ChevronUp, Shield, Store, ArrowRight } from 'lucide-react';
-
+import logo from './Image.png';
 function App() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const privacyRef = useRef<HTMLDivElement>(null);
@@ -22,7 +22,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <img 
-                src="Image.png" 
+                src="/Image.png" 
                 alt="Floorvana Logo" 
                 className="h-10"
               />
